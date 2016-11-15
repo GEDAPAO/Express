@@ -1,0 +1,56 @@
+<% include header %>
+<style>
+    .bamf{
+        font-size: 20em;
+    }
+    .fa-mail-reply-all:before, .fa-reply-all:before{
+        content: "\f122";
+    }
+</style>
+<div class="main">
+  <div class="page">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6" id="app-mount">
+          <section data-reactroot="">
+            <h1 class="page-header">Send a message</h1>
+            <form><fieldset><div class="form-group">
+                  <label class="control-label">Your name</label>
+                  <input type="text" autocapitalize="off" class="form-control" name="name">
+                  <span class="help-block"></span>
+                </div>
+                <div class="form-group">
+                  <label class="control-label">Your email</label>
+                  <input type="text" autocapitalize="off" class="form-control" name="email">
+                  <span class="help-block"></span>
+                </div>
+                <div class="form-group">
+                  <label class="control-label">Message</label>
+                  <textarea class="form-control" name="message" rows="5"></textarea>
+                  <span class="help-block"></span>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary">
+                    <!-- react-text: 19 -->Send message<!-- /react-text -->
+                    <span class="hidden">
+                      <!-- react-text: 21 -->&nbsp;&nbsp;<!-- /react-text -->
+                      <i class="fa fa-refresh fa-spin"></i>
+                    </span>
+                  </button>
+                </div>
+              </fieldset>
+            </form>
+          </section>
+        </div>
+        <div class="col-sm-6 text-center">
+          <h1 class="page-header">Contact us</h1>
+          <p class="lead">Freddy can't wait to hear from you.</p>
+          <i class="fa fa-reply-all bamf"></i>
+          <div>1428 Elm Street • San Francisco, CA 94122</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include footer %>

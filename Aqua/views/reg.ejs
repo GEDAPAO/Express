@@ -1,0 +1,60 @@
+<% include header %>
+<style>
+    .bamf{
+        font-size: 20em;
+    }
+    .fa-thumbs-o-up:before{
+        content: "\f087";
+    }
+</style>
+<div class="main">
+  <div class="page">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6" id="app-mount">
+          <section data-reactroot="">
+            <h1 class="page-header">Sign up</h1>
+            <form><fieldset><div class="form-group">
+                  <label class="control-label">Name</label>
+                  <input type="text" autocapitalize="off" class="form-control" name="name">
+                  <span class="help-block"></span>
+                </div><div class="form-group">
+                  <label class="control-label">Email</label>
+                  <input type="text" autocapitalize="off" class="form-control" name="email">
+                  <span class="help-block"></span>
+                </div>
+                <div class="form-group">
+                  <label class="control-label">Username</label>
+                  <input type="text" autocapitalize="off" class="form-control" name="username">
+                  <span class="help-block"></span>
+                </div>
+                <div class="form-group">
+                  <label class="control-label">Password</label>
+                  <input type="password" autocapitalize="off" class="form-control" name="password">
+                  <span class="help-block"></span>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary">
+                    <!-- react-text: 23 -->Create my account<!-- /react-text -->
+                    <span class="hidden">
+                      <!-- react-text: 25 -->&nbsp;&nbsp;<!-- /react-text -->
+                      <i class="fa fa-refresh fa-spin"></i>
+                    </span>
+                  </button>
+                </div>
+              </fieldset>
+            </form>
+          </section>
+        </div>
+        <div class="col-sm-6 text-center">
+          <h1 class="page-header">Campy benefits</h1>
+          <p class="lead">Really, you will love it inside. It's super great!</p>
+          <i class="fa fa-thumbs-o-up bamf">
+          </i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include footer %>
